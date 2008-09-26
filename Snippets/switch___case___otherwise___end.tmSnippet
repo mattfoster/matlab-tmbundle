@@ -14,7 +14,7 @@ end</string>
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>sw</string>
+	<string>switch</string>
 	<key>uuid</key>
 	<string>89BADD5A-72B8-4FE5-B082-499C7E7AB452</string>
 </dict>
