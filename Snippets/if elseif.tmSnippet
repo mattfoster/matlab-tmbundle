@@ -12,7 +12,7 @@ else
 end
 </string>
 	<key>name</key>
-	<string>if elseif</string>
+	<string>if … elseif … end</string>
 	<key>scope</key>
 	<string>source.matlab , source.octave</string>
 	<key>tabTrigger</key>

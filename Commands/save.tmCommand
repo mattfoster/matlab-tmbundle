@@ -20,7 +20,7 @@ puts "save(${1:'${2:filename}'},${3:'${4:#{variables.join("','")}}'}$5);"
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>sa</string>
+	<string>save</string>
 	<key>uuid</key>
 	<string>EA2AB0C2-A215-4503-930C-785CDF66F95B</string>
 </dict>

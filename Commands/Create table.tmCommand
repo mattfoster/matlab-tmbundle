@@ -81,7 +81,7 @@ puts table
 	<key>keyEquivalent</key>
 	<string>^@T</string>
 	<key>name</key>
-	<string>Create table</string>
+	<string>Create matrix</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
