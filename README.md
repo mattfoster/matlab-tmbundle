@@ -10,3 +10,8 @@ Recent changes:
 Please fix/report any problems. This is currently only in GitHub, but a merge back to TextMate's svn is planned.
 * Changes to the menu structure.
 * Added functions to the symbols list.
+
+Still todo:
+-----------
+
+Contact [Thomas Kjosmoen](http://kjosmoen.org/about "Kjosmoen.org  - About me") who I can't seem to get hold of.
