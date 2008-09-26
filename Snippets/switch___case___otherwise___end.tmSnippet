@@ -3,14 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sprintf('${1:%s}\\n'${1/([^%]|%%)*(%.)?.*/(?2:, :\);)/}$2${1/([^%]|%%)*(%.)?.*/(?2:\);)/}</string>
+	<string>switch ${1:switch_expression}
+	case ${2:case_expression}
+		${3:body}
+	otherwise
+		${4:body}
+end</string>
 	<key>name</key>
-	<string>sprintf</string>
+	<string>switch ... case ... otherwise ... end</string>
 	<key>scope</key>
 	<string>source.matlab, source.octave</string>
 	<key>tabTrigger</key>
-	<string>spr</string>
+	<string>sw</string>
 	<key>uuid</key>
-	<string>71CFA3F2-D883-4571-95B9-D98651890156</string>
+	<string>89BADD5A-72B8-4FE5-B082-499C7E7AB452</string>
 </dict>
 </plist>

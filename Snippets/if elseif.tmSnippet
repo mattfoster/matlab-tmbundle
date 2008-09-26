@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>switch ${1:var}
-case ${2:'${3:string}'}
-	$0
-`if [[ $TM_USE_OCTAVE -ne '0' ]]
-	then echo "endswitch"
+	<string>if ${1:condition}
+	${2:body}
+elseif ${3:condition}
+	${4:body}
 else
-	echo "end"
-fi`</string>
+	${5:body}
+end
+</string>
 	<key>name</key>
-	<string>switch … case … end</string>
+	<string>if elseif</string>
 	<key>scope</key>
-	<string>source.matlab</string>
+	<string>source.matlab , source.octave</string>
 	<key>tabTrigger</key>
-	<string>switch</string>
+	<string>ifeif</string>
 	<key>uuid</key>
-	<string>631FAA9C-ECC2-484A-A29C-3CD66D944693</string>
+	<string>93234216-9807-416E-8416-A130A05C2C1F</string>
 </dict>
 </plist>
