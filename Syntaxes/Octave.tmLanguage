@@ -73,6 +73,90 @@
 			<string>comment.line.pound.octave</string>
 		</dict>
 		<dict>
+			<key>begin</key>
+			<string>(?x)
+(?=function\b) # borrowed from ruby bundle
+(?&lt;=^|\s)(function)\s+ # the function keyword
+(?&gt;\[(.*)\])?\t# match various different combination of output arguments
+((?&gt;[a-zA-Z_]\w*))?
+(?&gt;\s*=\s*)?
+((?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?!&gt;))? )) # the function name
+(?=[ \t]*[^\s%|#]) # make sure arguments and not a comment follow
+\s*(\() # the opening parenthesis for arguments</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.octave</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.output.function.octave</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.output.function.octave</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.octave</string>
+				</dict>
+			</dict>
+			<key>contentName</key>
+			<string>variable.parameter.input.function.octave</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.octave</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.with-arguments.octave</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.octave</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.output.function.octave</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.parameter.output.function.octave</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.octave</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?x)
+(?=function\b) # borrowed from ruby bundle
+(?&lt;=^|\s)(function)\s+ # the function keyword
+(?&gt;\[(.*)\])? # match various different combination of output arguments
+((?&gt;[a-zA-Z_]\w*))?
+(?&gt;\s*=\s*)?
+((?&gt;[a-zA-Z_]\w*(?&gt;[?!]|=(?!&gt;))? )) # the function name</string>
+			<key>name</key>
+			<string>meta.function.without-arguments.octave</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>#constants_override</string>
 		</dict>
