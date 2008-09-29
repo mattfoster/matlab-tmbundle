@@ -635,7 +635,7 @@
 			<key>comment</key>
 			<string>Incomplete variable assignment.</string>
 			<key>match</key>
-			<string>=\s*\.{0,2}\s*$\n?</string>
+			<string>=\s*\.{0,2}\s*;?\s*$\n?</string>
 			<key>name</key>
 			<string>invalid.illegal.incomplete-variable-assignment.octave</string>
 		</dict>
