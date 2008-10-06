@@ -1033,7 +1033,7 @@
 			<key>comment</key>
 			<string>Valid numbers: 1, .1, 1.1, .1e1, 1.1e1, 1e1, 1i, 1j, 1e2j</string>
 			<key>match</key>
-			<string>(?&lt;=[\s\-\+\*\/\\=:\[\(\{,]|^)\d*\.?\d+([eE]-?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
+			<string>(?&lt;=[\s\-\+\*\/\\=:\[\(\{,]|^)\d*\.?\d+([eE][+-]?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
 			<key>name</key>
 			<string>constant.numeric.matlab</string>
 		</dict>
@@ -1153,11 +1153,11 @@
 		<key>variable</key>
 		<dict>
 			<key>comment</key>
-			<string>Valid variable.</string>
+			<string>Valid variable. Added meta to disable hilightinh</string>
 			<key>match</key>
 			<string>\b[a-zA-Z]\w*\b</string>
 			<key>name</key>
-			<string>variable.other.valid.matlab</string>
+			<string>meta.variable.other.valid.matlab</string>
 		</dict>
 		<key>variable_assignment</key>
 		<dict>
@@ -1173,7 +1173,7 @@
 			<key>comment</key>
 			<string>No variables or function names can start with a number or an underscore.</string>
 			<key>match</key>
-			<string>\b(_\w|\d+[_a-zA-Z])\w*\b</string>
+			<string>\b(_\w|\d+[_a-df-zA-DF-Z])\w*\b</string>
 			<key>name</key>
 			<string>invalid.illegal.invalid-variable-name.matlab</string>
 		</dict>

@@ -419,7 +419,7 @@
 			<key>comment</key>
 			<string>Valid numbers: 1, .1, 1.1, .1e1, 1.1e1, 1e1, 1i, 1j, 1e2j</string>
 			<key>match</key>
-			<string>(?&lt;=[\s\-\+\*\/\\=:\[\(\{,]|^)\d*\.?\d+([eE]-?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
+			<string>(?&lt;=[\s\-\+\*\/\\=:\[\(\{,]|^)\d*\.?\d+([eE][+-]?\d)?([0-9&amp;&amp;[^\.]])*(i|j)?\b</string>
 			<key>name</key>
 			<string>constant.numeric.octave</string>
 		</dict>
@@ -644,7 +644,7 @@
 			<key>comment</key>
 			<string>No variables or function names can start with a number or an underscore.</string>
 			<key>match</key>
-			<string>\b(_\w|\d+[_a-zA-Z])\w*\b</string>
+			<string>\b(_\w|\d+[_a-df-zA-DF-Z])\w*\b</string>
 			<key>name</key>
 			<string>invalid.illegal.invalid-variable-name.octave</string>
 		</dict>
