@@ -120,6 +120,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#string_double</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#transpose</string>
 		</dict>
 		<dict>
@@ -277,11 +281,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#transpose</string>
+					<string>#string_double</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#double_quote</string>
+					<string>#transpose</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -383,18 +387,6 @@
 				<dict>
 					<key>include</key>
 					<string>#end_in_parens</string>
-				</dict>
-			</array>
-		</dict>
-		<key>double_quote</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>"</string>
-					<key>name</key>
-					<string>invalid.illegal.invalid-quote.octave</string>
 				</dict>
 			</array>
 		</dict>
